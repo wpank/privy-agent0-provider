@@ -1,0 +1,55 @@
+{
+  "name": "privy-agent0-provider",
+  "version": "0.1.0",
+  "description": "Privy agentic wallet provider for the Agent0 ERC-8004 SDK",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "yarn build",
+    "example:auto": "tsx examples/register-auto.ts",
+    "example:existing": "tsx examples/register-existing.ts"
+  },
+  "peerDependencies": {
+    "@privy-io/node": ">=0.9.0",
+    "viem": ">=2.0.0",
+    "agent0-sdk": "*"
+  },
+  "devDependencies": {
+    "@privy-io/node": "^0.9.0",
+    "@types/node": "^20.10.0",
+    "agent0-sdk": "latest",
+    "dotenv": "^16.3.1",
+    "graphql": "^16.12.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0",
+    "viem": "^2.0.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agent0-xyz/privy-agent0-provider"
+  },
+  "keywords": [
+    "privy",
+    "agent0",
+    "erc-8004",
+    "eip-1193",
+    "viem",
+    "wallet",
+    "agentic",
+    "ethereum"
+  ],
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}
