@@ -24,7 +24,7 @@
   "peerDependencies": {
     "@privy-io/node": ">=0.9.0",
     "viem": ">=2.0.0",
-    "agent0-sdk": "*"
+    "agent0-sdk": ">=1.5.0"
   },
   "devDependencies": {
     "@privy-io/node": "^0.9.0",

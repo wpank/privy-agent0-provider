@@ -1,4 +1,4 @@
-import { sepolia, mainnet, base, type Chain } from 'viem/chains';
+import { sepolia, mainnet, base, polygon, baseSepolia, type Chain } from 'viem/chains';
 
 /**
  * Default mapping of chain IDs to viem Chain objects.
@@ -7,6 +7,8 @@ export const CHAIN_MAP: Record<number, Chain> = {
   1: mainnet,
   11155111: sepolia,
   8453: base,
+  137: polygon,
+  84532: baseSepolia,
 };
 
 /**
